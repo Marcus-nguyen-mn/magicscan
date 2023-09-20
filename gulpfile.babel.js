@@ -17,12 +17,12 @@ const PRODUCTION = yargs.argv.prod;
 
 const paths = {
     styles: {
-        src: ['src/assets/scss/bundle.scss'],
-        dest: 'dist/assets/css'
+        src: ['magicscan/src/assets/scss/bundle.scss'],
+        dest: 'magicscan/dist/assets/css'
     },
     scripts: {
-        src: ['src/assets/js/bundle.js'],
-        dest: 'dist/assets/js'
+        src: ['magicscan/src/assets/js/bundle.js'],
+        dest: 'magicscan/dist/assets/js'
     }
 }
 
@@ -48,8 +48,8 @@ export const styles = ()=>{
 }
 
 export const watch = () =>{
-    gulp.watch('src/assets/scss/**/*.scss', gulp.series(styles, reload));
-    gulp.watch('src/assets/js/**/*.js', gulp.series(scripts, reload));
+    gulp.watch('magicscan/src/assets/scss/**/*.scss', gulp.series(styles, reload));
+    gulp.watch('magicscan/src/assets/js/**/*.js', gulp.series(scripts, reload));
     gulp.watch('**/*.php', reload);
 }
 
