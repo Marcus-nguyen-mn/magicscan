@@ -28,7 +28,7 @@ const paths = {
 
 export const serve = (done)=>{
     server.init({
-        proxy: "http://localhost/magicscan"
+        proxy: "http://magicscan.co"
     });
     done();
 }
