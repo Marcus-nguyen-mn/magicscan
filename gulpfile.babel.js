@@ -41,9 +41,9 @@ export const reload = (done)=>{
 export const styles = ()=>{
     return gulp.src(paths.styles.src)
         .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
-        .pipe(sass().on('error', sass.logError))
+        // .pipe(sass().on('error', sass.logError))
         .pipe(cleanCss({compatibility: 'ie8'}))
-        .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
+        // .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
         .pipe(gulp.dest(paths.styles.dest));
 }
 
@@ -75,8 +75,8 @@ export const scripts = () => {
             output: {
                 filename: 'bundle.js'
             },
-            devtool: !PRODUCTION ? 'inline-source-map': false,
-            mode: 'development'
+            // devtool: !PRODUCTION ? 'inline-source-map': false,
+            mode: 'production'
         }))
         .pipe(uglify())
         .pipe(gulp.dest(paths.scripts.dest));
