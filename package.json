@@ -1,0 +1,43 @@
+{
+  "name": "stories",
+  "version": "1.0.0",
+  "description": "website stories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcus-nguyen-mn/Stories.git"
+  },
+  "author": "Nam Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcus-nguyen-mn/Stories/issues"
+  },
+  "homepage": "https://github.com/Marcus-nguyen-mn/Stories#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/register": "^7.21.0",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.28.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.59.3",
+    "webpack-stream": "^7.0.0",
+    "yargs": "^17.7.1"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "js-share": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
